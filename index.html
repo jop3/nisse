@@ -5,78 +5,105 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="landing is-preload">
-		<div id="page-wrapper">
+		<link rel="stylesheet" href="assets/css/animate.min.css" />
+		<style>
+			/* Add snowfall style */
+			#snowfall {
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				pointer-events: none;
+				z-index: 9999;
+			}
+					/* Customize buttons */
+		.button.primary {
+			background-color: #DC143C;
+			border-color: #DC143C;
+		}
 
+		.button.primary:hover {
+			background-color: #FF4500;
+			border-color: #FF4500;
+		}
 
-			<!-- Banner -->
-				<section id="banner">
-					<h2>BUSIGA NISSEBREV</h2>
-					<p>Får en liten tomtenisse flytta in hos er? Busiga äventyr utlovas!</p>
-					<ul class="actions special">
-						<li><a href="https://bit.ly/julbus2022" class="button primary">BESTÄLL NISSEBREV</a></li>
-						<li><a href="https://bit.ly/julbus2022plus" class="button primary">BESTÄLL TILLBEHÖR</a></li>
-					</ul>
-				</section>
+		/* Customize text */
+		h2, h3 {
+			font-weight: bold;
+			color: #DC143C;
+		}
 
-			<!-- Main -->
-				<section id="main" class="container">
+		p {
+			font-size: 1.1em;
+		}
+	</style>
+</head>
+<body class="landing is-preload">
+	<div id="page-wrapper">
 
-					<section class="box special">
-						<header class="major">
-							<h2>NU FINNS NISSEBREV FÖR 2022 ATT KÖPA!</h2>
-							<div>&nbsp;</div>
-							<h2>Med våra busiga nissebrev skapar du oförglömliga minnen tillsammans med barnen. Era dagar fram till julafton fylls med skratt, bus och roliga uppdrag.</h2>
-						</header>
-					</section>
+		<!-- Snowfall -->
+		<canvas id="snowfall"></canvas>
 
-					
+		<!-- Banner -->
+		<section id="banner" class="animate__animated animate__fadeIn">
+			<h2>Busiga Nissebrev</h2>
+			<p>Få en liten tomtenisse att flytta in och skapa magiska minnen tillsammans med familjen!</p>
+			<ul class="actions special">
+				<li><a href="https://bit.ly/julbus2022" class="button primary">BESTÄLL NISSEBREV NU</a></li>
+				<li><a href="https://bit.ly/julbus2022plus" class="button primary">SKAPA DIN EGEN NISSE</a></li>
+			</ul>
+		</section>
 
-					<div class="row">
-						<div class="col-6 col-12-narrower">
+		<!-- Main -->
+		<section id="main" class="container">
 
-							<section class="box special">
-								<span class="image featured"><img src="images/Nisselina2022.jpg" alt="" /></span>
-								<h3>Detta ingår:</h3>
-										<ul class="align-left">
-												<li>Instruktioner för dig som vuxen så du vet vad du behöver förbereda och tänka på.</li>
-												<li>30 bus- och uppdragskort.</li>
-												<li>Tre förberedda brev: inför inflytt, vid inflytt och vid utflyttning.</li>
-											  </ul>
-								<p>Finns både till ett barn (skrivna i du-form) och till flera barn (i ni-form). Finns att beställa med en Nisse eller en Nisselina. Passar för barn från 2-3 år och uppåt.</p>
-							</section>
+			<section class="box special animate__animated animate__fadeInUp" data-animate="animate__fadeInUp">
+				<header class="major">
+					<h2>Skapa oförglömliga minnen med våra busiga nissebrev!</h2>
+					<p>Med våra busiga nissebrev får du och dina barn en alldeles unik och magisk upplevelse fram till julafton, fylld med skratt, bus och roliga uppdrag. Gör nedräkningen till jul extra speciell!</p>
+				</header>
+			</section>
 
-						</div>
-						<div class="col-6 col-12-narrower">
+			<div class="row">
+				<div class="col-6 col-12-narrower">
 
-							<section class="box special">
-								<span class="image featured"><img src="images/Nisse2022.jpg" alt="" /></span>
-								<ul>
-										<h3>Brevleverans</h3><li class="align-left">Jag skriver ut allt material och skickar till dig: 79 kronor inklusive porto och det ingår även ett fint rött satinband att knyta runt breven samt bus- och uppdragskorten.</li>
-									<h3>Digital leverans</h3><li class="align-left">Jag skickar PDF-filer direkt till din mail: 50 kronor. Snabbt och smidigt, du skriver ut allt själv.</li>
-</ul>
-
-<p style="font-weight: bold">Vi har också nisse-dockor och mini-yatzy som tillbehör!</p>
-
-							</section>
-						</div>
+					<section class="box special animate__animated animate__fadeInLeft" data-animate="animate__fadeInLeft">
+						<span class="image featured"><img src="images/Nisselina2022.jpg" alt="" /></span>
+						<h3>Vad ingår?</h3>
+						<ul class="align-left">
+							<li>Instruktioner för dig som vuxen så du vet vad du behöver förbereda och tänka på.</li>
+							<li>30 bus- och uppdragskort.</li>
+							<li>Tre förberedda brev: inför inflytt, vid inflytt och vid utflyttning.</li>
+						</ul>
+						<p>Finns både för ett barn (skrivna i du-form) och för flera barn (i ni-form). Finns att beställa med en Nisse eller en Nisselina. Passar för barn från 2-3 år och uppåt.</p>
+						</section>
 					</div>
-				</section>
-
-				<ul class="actions special">
-						<li><a href="https://bit.ly/julbus2022" class="button primary">BESTÄLL NISSEBREV</a></li>
-						<li><a href="https://bit.ly/julbus2022plus" class="button primary">BESTÄLL TILLBEHÖR</a></li>
-				</ul>
-
+					<div class="col-6 col-12-narrower">
+	
+						<section class="box special animate__animated animate__fadeInRight" data-animate="animate__fadeInRight">
+							<span class="image featured"><img src="images/Nisse2022.jpg" alt="" /></span>
+							<h3>Leveransalternativ</h3>
+							<ul>
+								<li><strong>Brevleverans:</strong> Jag skriver ut allt material och skickar till dig: 79 kronor inklusive porto. Det ingår även ett fint rött satinband att knyta runt breven samt bus- och uppdragskorten.</li>
+								<li><strong>Digital leverans:</strong> Jag skickar PDF-filer direkt till din mail: 50 kronor. Snabbt och smidigt, du skriver ut allt själv.</li>
+							</ul>
+							<p style="font-weight: bold">Vi har också nisse-dockor och mini-yatzy som tillbehör!</p>
+						</section>
+					</div>
+				</div>
+			</section>
+	
+			<ul class="actions special animate__animated animate__fadeInUp" data-animate="animate__fadeInUp">
+				<li><a href="https://bit.ly/julbus2022" class="button primary">BESTÄLL NISSEBREV NU</a></li>
+				<li><a href="https://bit.ly/julbus2022plus" class="button primary">SKAPA DIN EGEN NISSE</a></li>
+			</ul>
+	
 			<!-- CTA -->
-			<section id="foten">
-
-				</section>
-
-
+			<section id="foten" class="animate__animated animate__fadeInUp" data-animate="animate__fadeInUp">
+	
+			</section>
+	
 		</div>
-
+	
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
@@ -85,6 +112,25 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/snowstorm-min.js"></script>
+			<script>
+				// Initialize snowfall
+				new Snowfall('#snowfall', { round: true, flakeCount: 200, speed: 1 });
+	
+				// Animate on scroll
+				$(window).on('scroll', function () {
+					$('.animate__animated').each(function () {
+						var elemPos = $(this).offset().top,
+							topOfWindow = $(window).scrollTop(),
+							windowHeight = $(window).height();
+	
+						if (elemPos < topOfWindow + windowHeight - 100) {
+							$(this).addClass($(this).data('animate'));
+					
+						}
+				});
+			});
+		</script>
 
-	</body>
+</body>
 </html>
