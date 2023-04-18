@@ -6,89 +6,22 @@
 		<meta name="description" content="Magiskt busiga nissebrev - Skapa oförglömliga julminnen med en busig tomtenisse i hemmet! Beställ nissebrev och nissetillbehör idag.">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/animate.min.css" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
 		<!-- Open Graph tags -->
 		<meta property="og:title" content="Magiskt busiga nissebrev">
 		<meta property="og:description" content="Skapa oförglömliga julminnen med en busig tomtenisse i hemmet! Beställ nissebrev och nissetillbehör idag.">
-		<meta property="og:image" content="https://www.nissebrevbus.se/images/biglogo.png">
+		<meta property="og:image" content="https://www.nissebrevbus.se/images/Storlogo.webp">
 		<meta property="og:url" content="https://www.nissebrevbus.se">
 		<meta property="og:type" content="website">
 		<meta property="og:locale" content="sv_SE" />
-
-			<!-- Add Open Graph meta tags -->
-	<meta property="og:title" content="Magiskt busiga nissebrev" />
-	<meta property="og:description" content="Skapa oförglömliga julminnen med en busig tomtenisse i hemmet! Beställ nissebrev och nissetillbehör nu!" />
-	<meta property="og:image" content="https://yourwebsite.com/images/your-image.jpg" />
-	<meta property="og:url" content="https://yourwebsite.com/" />
-	<meta property="og:type" content="website" />
-	<meta property="og:locale" content="sv_SE" />
-	<meta property="fb:app_id" content="your_app_id" />
-	
-
 		<!-- Twitter Card tags -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:title" content="Magiskt busiga nissebrev">
 		<meta name="twitter:description" content="Skapa oförglömliga julminnen med en busig tomtenisse i hemmet! Beställ nissebrev och nissetillbehör idag.">
-		<meta name="twitter:image" content="https://www.nissebrevbus.se/images/logo.png">
-
-		<style>
-			/* Add snowfall style */
-			#snowfall {
-				position: fixed;
-				width: 100%;
-				height: 100%;
-				pointer-events: none;
-				z-index: 9999;
-			}
-					/* Customize buttons */
-		.button.primary {
-			background-color: #DC143C;
-			border-color: #DC143C;
-		}
-        .button.primary:hover {
-		background-color: #FF4500;
-		border-color: #FF4500;
-	}
-
-	/* Customize text */
-	h2, h3 {
-		font-weight: bold;
-		color: #DC143C;
-	}
-
-	.dropBlack
-	{
-		text-shadow: 2px 2px 4px #000000; /* Add this line */
-	}
-
-	.redText
-	{
-		font-weight: bold;
-		color: #DC143C;
-	}
-
-
-	p {
-		font-size: 1.1em;
-	}
-
-		/* Elf styles */
-		.elf {
-		position: absolute;
-		width: 50px;
-		height: 100px;
-		background-image: url('images/elf.png'); /* Replace 'elf.png' with the actual elf image URL */
-		background-size: contain;
-		background-repeat: no-repeat;
-		display: none;
-		z-index: 1000;
-	}
-	</style>
+		<meta name="twitter:image" content="https://www.nissebrevbus.se/images/Storlogo.webp">
 </head>
 <body class="landing is-preload">
 	<div id="page-wrapper">
-
 		<!-- Snowfall -->
 		<canvas id="snowfall"></canvas>
 		<!-- Elf -->
@@ -118,7 +51,7 @@
 				<div class="col-6 col-12-narrower">
 
 					<section class="box special animate__animated animate__fadeInLeft" data-animate="animate__fadeInLeft">
-						<span class="image featured"><img src="images/Nisselina2022.jpg" alt="" /></span>
+						<span class="image featured"><img src="images/Nisselina.webp" alt="" /></span>
 						<h3>Vad ingår?</h3>
 						<ul class="align-left">
 							<li>Tydliga instruktioner för dig som vuxen så att du enkelt kan förbereda och genomföra busen.</li>
@@ -131,7 +64,7 @@
 					<div class="col-6 col-12-narrower">
 	
                         <section class="box special animate__animated animate__fadeInRight" data-animate="animate__fadeInRight">
-                            <span class="image featured"><img src="images/Nisse2022.jpg" alt="" /></span>
+                            <span class="image featured"><img src="images/Nisse.webp" alt="" /></span>
                             <h3>Leveransalternativ</h3>
                             <ul>
                                 <li><strong>Brevleverans:</strong> Vi skriver ut allt material och skickar det hem till dig för 79 kronor inklusive porto. Ett vackert rött satinband medföljer för att knyta runt breven samt bus- och uppdragskorten.</li>
@@ -155,6 +88,7 @@
 		</div>
 	
 		<!-- Scripts -->
+			<link rel="stylesheet" href="assets/css/animate.min.css" />
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -199,11 +133,11 @@
 			function hideElf() {
 				const elf = document.getElementById('elf');
 				elf.style.display = 'none';
-				setTimeout(showElf, Math.floor(Math.random() * 60000) + 10000); // Show the elf again at a random time between 30 and 90 seconds
+				setTimeout(showElf, Math.floor(Math.random() * 30000) + 10000); // Show the elf again at a random time between 30 and 90 seconds
 			}
 
 			// Initialize elf appearance
-			setTimeout(showElf, Math.floor(Math.random() * 60000) + 10000);
+			setTimeout(showElf, Math.floor(Math.random() * 30000) + 10000);
 		</script>
 	</body>
 </html>
